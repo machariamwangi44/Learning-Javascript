@@ -1,0 +1,18 @@
+function averageTeam(score1, score2, score3) {
+    const teammean = (score1 + score2 + score3) / 3;
+    return teammean;
+}
+
+const averageDolphins = averageTeam(44, 23, 71);
+console.log(averageDolphins);
+
+const averageKoalas = averageTeam(65, 54, 49);
+console.log(averageKoalas);
+
+
+function checkwinner(averageDolphins, averageKoalas) {
+    if (averageDolphins > averageKoalas) {
+        console.log(` dolphins win (${averageDolphins} vs ${averageKoalas})`);
+    } else if (averageKoalas > averageDolphins) {
+        console.log(`koalas win (${averageKoalas} vs ${averageDolphins})`);
+    }
